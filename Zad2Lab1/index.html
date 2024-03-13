@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)https://e-uczelnia.ath.bielsko.pl/pluginfile.php/33501/mod_resource/content/2/Lab2Ex2 -->
+<html data-lt-installed="true"><!--
+   This web page does the minimal setup for using mouse events along
+   with 2D canvas graphics.
+-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>CS424, Lab 2, Exercise 2</title>
+
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link id="#chromealerabat-link" rel="stylesheet" type="text/css"
+          href="chrome-extension://dacdinoicboceafielngnmjjplncljhj/content.css">
+</head>
+<body onload="init()"> <!-- the onload attribute here is what calls the init() function -->
+
+<h2>Lab 2, Exercise 2: Mousing</h2>
+
+<noscript>
+    <!-- This messawill be shown in the page if JavaScript is not available. -->
+    <p>JavaScript is required to use this page.</p>
+</noscript>
+
+<div>
+    <b>Color:</b>
+    <select id="colorChoice">
+        <option value="0">Random</option>
+        <option value="1">Red</option>
+        <option value="2">Green</option>
+        <option value="3">Blue</option>
+        <option value="4">Yellow</option>
+    </select>
+</div>
+
+<div>
+    <b>Rysowanie:</b>
+    <select id="shapeType">
+        <option value="0">Kwadrat</option>
+        <option value="1">13-kąt</option>
+    </select>
+</div>
+
+<div>
+    <button onclick="init()" type="button" id="clearButton">Clear</button>
+</div>
+
+<div id="canvasholder">
+    <canvas id="canvas" width="800" height="600">
+        <!-- This message is shown on the page if the browser doesn't support the canvas element. -->
+        Canvas not supported.
+    </canvas>
+</div>
+
+</body>
+</html>

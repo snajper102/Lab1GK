@@ -1,0 +1,27 @@
+[_nghost-arf-c52] {
+    font-family: Open Sans, sans-serif;
+    color: #121212
+}
+
+/* This style section is here to make the canvas more obvious on the
+       page.  It is white on a light gray page background, with a thin
+       black border.  Also, turn off text selection to avoid having
+       selection interfere with mouse action. */
+body {
+    background-color: #DDDDDD;
+    -webkit-user-select: none; /* turn off text selection  / Webkit */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10  */
+    -o-user-select: none; /* Opera */
+    user-select: none;
+}
+
+canvas {
+    background-color: white;
+    display: block;
+}
+
+#canvasholder {
+    border: 2px solid black;
+    float: left; /* This makes the border exactly fit the canvas. */
+}
